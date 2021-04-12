@@ -1,17 +1,15 @@
 
-//random da 1 a 100
-var rnd = Math.ceil(Math.random() * 100);
+//print 1 - 100
+for(var i = 1; i < 101; i++){
 
-//print random number
-console.log(rnd);
-
-//conditions
-if (rnd % 3 === 0 && rnd % 5 === 0){
-    console.log("FizzBuzz")
-}else if (rnd % 3 === 0) {
-    console.log("Fizz")
-} else if (rnd % 5 === 0) {
-    console.log("Buzz")
-} else {
-    console.log("Nada")
+    //conditions
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz")
+    }else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
 }
